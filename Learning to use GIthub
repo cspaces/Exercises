@@ -1,0 +1,14 @@
+import random
+word_list['apple','hangman','test']
+chosen_word = random.choice (word_list)
+print(chosen_word)
+
+guess = input("guess a letter\n")
+guess = guess.lower()
+print(guess)
+
+for x in chosen_word:
+    if x == guess:
+      print ("right")
+    else:
+      print("wrong")
